@@ -1,0 +1,12 @@
+<br>
+<form ngNativeValidate (click)="sendData(name.value, email.value)">
+  <div class="data">
+    <h1>Add Employees</h1>
+  <label>Full Name: </label>
+  <input type="text" class="form-control form-control-lg" #name required><br>
+  <label>Email: </label>
+  <input type="email" class="form-control form-control-lg" #email required><br>
+  <button type="submit" class="btn btn-success">Submit</button>
+  </div>
+</form>
+<br>

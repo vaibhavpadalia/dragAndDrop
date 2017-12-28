@@ -1,0 +1,37 @@
+<br>
+<div>
+
+  <div class='wrapper'>
+    <h1 style="font-size: 25px">Employee Table</h1>
+    <div class='container' [dragula]='"first-bag"' id="employee">
+        <div *ngFor="let emp of employeeList" >{{emp.email}}</div>
+    </div>
+
+    </div>
+    <div class='wrapper'>
+    <h1 style="font-size: 25px">Team 1</h1>
+    <div class='container' [dragula]='"first-bag"' id='team1'>
+        <div *ngFor="let t1 of team1" >{{t1.email}}</div>
+    </div>
+    </div>
+
+    <div class='wrapper'>
+    <h1 style="font-size: 25px">Team 2</h1>
+     <div class='container' [dragula]='"first-bag"' id='team2'>
+        <div *ngFor="let t2 of team2" >{{t2.email}}</div>
+    </div>
+    </div>
+
+    <div class='wrapper'>
+    <h1 style="font-size: 25px">Team 3</h1>
+    <div class='container' [dragula]='"first-bag"' id='team3'>
+        <div *ngFor="let t3 of team3" >{{t3.email}}</div>
+    </div>
+    </div>
+
+</div>
+<br><br>
+<button class="btn btn-success">Save Data</button><br><br>
+<button class="btn btn-warning">Reset Data</button>
+
+
