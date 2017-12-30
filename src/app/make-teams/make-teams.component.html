@@ -6,8 +6,8 @@
     <div class='container' [dragula]='"first-bag"' id="employee">
         <div *ngFor="let emp of employeeList" >{{emp.email}}</div>
     </div>
-
     </div>
+
     <div class='wrapper'>
     <h1 style="font-size: 25px">Team 1</h1>
     <div class='container' [dragula]='"first-bag"' id='team1'>
@@ -29,9 +29,12 @@
     </div>
     </div>
 
+    <div style="text-align: right;">
+        <button (click)="saveData()" class="btn btn-success">Save Data</button> <br><br>
+        <button (click)="removeData()"class="btn btn-warning">Reset Data</button>
+    </div>
+    <br>
 </div>
-<br><br>
-<button class="btn btn-success">Save Data</button><br><br>
-<button class="btn btn-warning">Reset Data</button>
+
 
 

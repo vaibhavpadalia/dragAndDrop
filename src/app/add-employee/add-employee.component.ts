@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { UserService } from '../user.service';
 
 @Component({
   selector: 'app-add-employee',
@@ -7,9 +8,18 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AddEmployeeComponent implements OnInit {
 
-  constructor() { }
+  constructor(private service: UserService) { }
 
   ngOnInit() {
   }
 
+  sendData(name: string, email: string) {
+    this.service.createUser(name, email).subscribe(res => {
+      if (JSON.parse(res.text()).success === true) {
+        alert('Employee Added');
+      } else {
+        alert('Employee cannot be added');
+      }
+    });
+  }
 }
