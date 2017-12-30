@@ -70,16 +70,8 @@ export class MakeTeamsComponent implements OnInit {
     if (value[2].id === 'team3') {
       this.team3.push({email: value[1].firstChild.data, name: remobj[0].name, _id: remobj[0]._id});
     }
-    console.log(remobj);
-    // console.log(this.employeeList);
-
-    // console.log(this.team1);
-    // console.log(this.team2);
-    // console.log(this.team3);
-   // this.onDrop(value.slice(1));
   });
   }
-
 
   ngOnInit() {
   }
@@ -96,5 +88,6 @@ export class MakeTeamsComponent implements OnInit {
     localStorage.removeItem('team1');
     localStorage.removeItem('team2');
     localStorage.removeItem('team3');
+    window.location.reload();
   }
 }
