@@ -1,12 +1,18 @@
 <br>
-<form ngNativeValidate (submit)="sendData(name.value, email.value)">
-  <div class="data">
-    <h1>Add Employees</h1>
-  <label>Full Name: </label>
-  <input type="text" class="form-control form-control-lg" #name required><br>
-  <label>Email: </label>
-  <input type="email" class="form-control form-control-lg" #email required><br>
-  <button type="submit" class="btn btn-success">Submit</button>
-  </div>
-</form>
+<div style="margin-bottom: 100px; margin-top: 80px">
+  <form ngNativeValidate (submit)="sendData(name.value, email.value)">
+    <div class="data">
+      <div style="margin-bottom: 50px">
+        <h1>Add Employees</h1>
+      </div>
+      <label>Full Name: </label>
+      <input type="text" class="form-control form-control-lg" #name required>
+      <br>
+      <label>Email: </label>
+      <input type="email" class="form-control form-control-lg" #email required>
+      <br>
+      <button type="submit" class="btn btn-success">Submit</button>
+    </div>
+  </form>
+</div>
 <br>
