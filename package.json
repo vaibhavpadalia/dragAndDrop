@@ -25,7 +25,7 @@
     "core-js": "^2.4.1",
     "cors": "^2.8.4",
     "handlebars": "^4.3.0",
-    "mongoose": "^4.13.7",
+    "mongoose": "^4.13.21",
     "ng2-dragula": "^1.5.0",
     "rxjs": "^5.4.2",
     "zone.js": "^0.8.14"
